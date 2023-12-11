@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 800">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="arrow_right-_333_" data-name="arrow_right-[#333]" class="cls-1" d="m384.4,0l55.6,56.23L109.56,400.53l35.24,36.72-.2-.21,293.6,305.9-54.76,57.07C302.28,715.49,75.72,479.43,0,400.53c56.24-58.65,1.4-1.48,384.4-400.53"/>
+</svg>

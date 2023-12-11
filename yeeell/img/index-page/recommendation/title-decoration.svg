@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Isolation_Mode" data-name="Isolation Mode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 83">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #2f2f2f;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="61.5" y1="77.36" x2="23.47" y2="1.5"/>
+  <line class="cls-1" x1="38.14" y1="81.5" x2="1.5" y2="55.64"/>
+</svg>

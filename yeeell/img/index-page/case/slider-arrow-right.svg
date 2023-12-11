@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_ãƒ¬ã‚¤ãƒ¤ãƒ¼_1" data-name="ãƒ¬ã‚¤ãƒ¤ãƒ¼ 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #bb94f7;
+      }
+    </style>
+  </defs>
+  <circle class="cls-2" cx="30" cy="30" r="30"/>
+  <g id="g15365">
+    <path id="path15361" class="cls-1" d="m19.31,20.9v18.19c0,.41.45.67.81.47l15.76-9.1c.36-.21.36-.73,0-.93l-15.76-9.1c-.36-.21-.81.05-.81.47Z"/>
+    <path id="path15363" class="cls-1" d="m40.15,19.97c.3,0,.54.24.54.54v18.98c0,.3-.24.54-.54.54h-2.93c-.3,0-.54-.24-.54-.54v-18.98c0-.3.24-.54.54-.54h2.93Z"/>
+  </g>
+</svg>

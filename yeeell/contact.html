@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="js-html" lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&amp;display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  </head>
+  <body></body>
+  <header class="header header--lower"><a href="./"><img class="header__logo" src="img/logos/yeeell-logo.svg" alt=""></a></header>
+  <main class="main">
+    <section class="main__section contact skew">
+      <div class="contact__container skew__remove-skew">
+        <h2 class="contact__heading">CONTACT</h2>
+        <div class="contact__form-box">
+          <h3 class="contact__form-heading">企業様のお問い合わせ</h3>
+          <form class="contact__form" action="" name="contact-form"> 
+            <div class="contact__input">
+              <label class="contact__label">ご用件</label>
+              <div class="contact__input-wrap"><span class="mwform-checkbox-field horizontal-item">
+                  <label>
+                    <input type="checkbox" name="advertising" value="クリエイターへの広告出稿について"><span class="mwform-checkbox-field-text">クリエイターへの広告出稿について</span>
+                  </label></span><span class="mwform-checkbox-field horizontal-item">
+                  <label>
+                    <input type="checkbox" name="sns" value="SNSプロモーション全般について"><span class="mwform-checkbox-field-text">SNSプロモーション全般について</span>
+                  </label></span><span class="mwform-checkbox-field horizontal-item">
+                  <label>
+                    <input type="checkbox" name="others" value="その他"><span class="mwform-checkbox-field-text">その他</span>
+                  </label></span></div>
+            </div>
+            <div class="contact__input contact__input--not-required">
+              <label class="contact__label">会社名</label>
+              <div class="contact__input-wrap">
+                <input type="text" name="company">
+              </div>
+            </div>
+            <div class="contact__input"> 
+              <label class="contact__label">氏名</label>
+              <div class="contact__input-wrap">
+                <input type="text" name="name">
+              </div>
+            </div>
+            <div class="contact__input"> 
+              <label class="contact__label">氏名(ふりがな)</label>
+              <div class="contact__input-wrap">
+                <input type="text" name="name-f">
+              </div>
+            </div>
+            <div class="contact__input contact__input--not-required">
+              <label class="contact__label">電話番号（半角）</label>
+              <div class="contact__input-wrap contact__input-wrap--tel">
+                <input type="tel" name="tel-1">
+                <input type="tel" name="tel-2">
+                <input type="tel" name="tel-3">
+              </div>
+            </div>
+            <div class="contact__input"> 
+              <label class="contact__label">メールアドレス</label>
+              <div class="contact__input-wrap">
+                <input type="email" name="email">
+              </div>
+            </div>
+            <div class="contact__input"> 
+              <label class="contact__label">確認用メールアドレス</label>
+              <div class="contact__input-wrap">
+                <input type="email" name="email-confirm">
+              </div>
+            </div>
+            <div class="contact__input">
+              <label class="contact__label">お問い合わせ内容</label>
+              <div class="contact__input-wrap contact__input-wrap--textarea">
+                <textarea name="inquiry" cols="50" rows="8" placeholder="商品やクリエイター名など、お問い合わせについてできるだけ詳しくご記入ください。"></textarea>
+              </div>
+            </div>
+            <div class="contact__input"><span class="mwform-checkbox-field horizontal-item">
+                <label>
+                  <input class="required" type="checkbox" name="agree" value="個人情報の取り扱いについて同意する"><span class="mwform-checkbox-field-text">個人情報の取り扱いについて同意する</span>
+                </label></span></div>
+            <div class="contact__btn-container">
+              <button type="button" name="proceed">確認</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__border skew"></div>
+    <div class="footer__container"><a class="footer__to-top-btn" href="#">
+        <div class="footer__to-top-btn-icon"></div></a><img class="footer__logo" src="img/logos/yeeell-logo.svg" alt=""><a href="#"><img class="footer__social-icon" src="img/icons/twitter-icon.svg" alt=""></a>
+      <p class="footer__text">〒150-0031 東京都渋谷区桜丘町29-33渋谷三信マンション405<br>© YEEELL All Rights Reserved.</p>
+    </div>
+  </footer>
+  <div class="modal js-modal">
+    <div class="modal__box">
+      <div class="modal__video-wrapper">
+        <iframe class="modal__iframe js-iframe" src="" title="YouTube video player" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="js/common/index.js"></script>
+  <script src="js/lower/index.js"></script>
+</html>
