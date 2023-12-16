@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/common/components/menuToggler.ts":[function(require,module,exports) {
+})({"Ywcr":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -127,10 +127,37 @@ Object.defineProperty(exports, "__esModule", {
  * Toggle menu in mobile view
  */
 var menuToggler = function menuToggler() {
- 
+  var headers = document.querySelectorAll('.header');
+  var body = document.body;
+  var windowWidth = window.innerWidth;
+  if (windowWidth < 1025 && headers) {
+    headers.forEach(function (header) {
+      var toggler = header.querySelector('.js-toggler');
+      var anchors = header.querySelectorAll('.header__anchor');
+      var nav = header.querySelector('.js-nav');
+      var updateBodyOverflow = function updateBodyOverflow() {
+        if (header && header.classList.contains('expand')) {
+          body.style.overflow = 'hidden';
+        } else {
+          body.style.overflow = 'auto';
+        }
+      };
+      var collapseHeader = function collapseHeader() {
+        header.classList.remove('expand');
+        updateBodyOverflow();
+      };
+      toggler === null || toggler === void 0 ? void 0 : toggler.addEventListener('click', function () {
+        header === null || header === void 0 ? void 0 : header.classList.toggle('expand');
+        updateBodyOverflow();
+        anchors.forEach(function (anchor) {
+          anchor.addEventListener('click', collapseHeader);
+        });
+      });
+    });
+  }
 };
 exports.default = menuToggler;
-},{}],"js/common/components/showElementsOnScroll.ts":[function(require,module,exports) {
+},{}],"VVH8":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -141,20 +168,19 @@ Object.defineProperty(exports, "__esModule", {
  */
 var showElements = function showElements() {
   var header = document.querySelector(".header");
-  //const btn = document.querySelector(".js-to-top");
+  var btn = document.querySelector(".js-to-top");
   window.addEventListener("scroll", function () {
-    if (header) {
+    if (header && btn) {
       if (window.scrollY > 400) {
         header.classList.add("show");
-        //  btn.classList.add("show");
+        btn.classList.add("show");
       } else {
         header.classList.remove("show");
-        //  btn.classList.remove("show");
+        btn.classList.remove("show");
       }
     }
   });
 };
-
 exports.default = showElements;
 },{}],"js/common/components/dropdown.ts":[function(require,module,exports) {
 "use strict";
@@ -177,7 +203,7 @@ var dropdown = function dropdown() {
   }
 };
 exports.default = dropdown;
-},{}],"js/common/components/slider.ts":[function(require,module,exports) {
+},{}],"kfMh":[function(require,module,exports) {
 "use strict";
 
 /**
@@ -187,7 +213,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var slider = function slider() {
-  var img = document.querySelector(".js-slider");
+  var img = document.querySelector(".banner__slider");
   var imgSplide = new Splide(img, {
     type: 'loop',
     focus: 'center',
@@ -199,7 +225,29 @@ var slider = function slider() {
   imgSplide.mount();
 };
 exports.default = slider;
-},{}],"js/common/index.ts":[function(require,module,exports) {
+},{}],"XRMa":[function(require,module,exports) {
+"use strict";
+
+/**
+ * Setup splide plugin for banner
+ */
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var testimonialSlider = function testimonialSlider() {
+  var card = document.querySelector(".testimonial__slider");
+  var cardSplide = new Splide(card, {
+    type: 'loop',
+    focus: 'center',
+    arrows: false,
+    pagination: false,
+    drag: true,
+    perPage: 3
+  });
+  cardSplide.mount();
+};
+exports.default = testimonialSlider;
+},{}],"JslC":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -214,11 +262,12 @@ var menuToggler_1 = __importDefault(require("./components/menuToggler"));
 var showElementsOnScroll_1 = __importDefault(require("./components/showElementsOnScroll"));
 var dropdown_1 = __importDefault(require("./components/dropdown"));
 var slider_1 = __importDefault(require("./components/slider"));
+var testimonialSlider_1 = __importDefault(require("./components/testimonialSlider"));
 document.addEventListener('DOMContentLoaded', function () {
   (0, menuToggler_1.default)();
   (0, showElementsOnScroll_1.default)();
   (0, dropdown_1.default)();
   (0, slider_1.default)();
+  (0, testimonialSlider_1.default)();
 }, false);
-},{"./components/menuToggler":"js/common/components/menuToggler.ts","./components/showElementsOnScroll":"js/common/components/showElementsOnScroll.ts","./components/dropdown":"js/common/components/dropdown.ts","./components/slider":"js/common/components/slider.ts"}]},{},["js/common/index.ts"], null)
-//# sourceMappingURL=/js/common/index.js.map
+},{"./components/menuToggler":"Ywcr","./components/showElementsOnScroll":"VVH8","./components/dropdown":"js/common/components/dropdown.ts","./components/slider":"kfMh","./components/testimonialSlider":"XRMa"}]},{},["JslC"], null)

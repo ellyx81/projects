@@ -15,12 +15,12 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__contents"><a class="header__logo" href=""> <img class="contain pc-only" src="img/logo.svg" alt="Serenity Salon"><img class="contain tablet" src="img/logo-tab.svg"></a>
+      <div class="header__contents"><a class="header__logo" href="#"> <img class="contain pc-only" src="img/logo.svg" alt="Serenity Salon"><img class="contain tablet" src="img/logo-tab.svg"></a>
         <nav class="header__nav js-nav">
           <div class="header__anchor-list"><a class="header__anchor" href="#">Home </a>
             <div class="header__anchor header__anchor--dropdown js-dropdown">About Us
-              <div class="header__submenu"><a class="header__anchor" href="#about">About Us</a><a class="header__anchor" href="#services">Services</a><a class="header__anchor" href="#testimonials">Testimonials</a><a class="header__anchor" href="#branches">Branches</a></div>
-            </div><a class="header__anchor tablet-flex" href="#about">About Us</a><a class="header__anchor tablet-flex" href="#services">Services</a><a class="header__anchor tablet-flex" href="#testimonials">Testimonials</a><a class="header__anchor tablet-flex" href="#branches">Branches</a><a class="header__anchor" href="#contact">Contact</a>
+              <div class="header__submenu"><a class="header__anchor" href="#about">About Us</a><a class="header__anchor" href="#services">Services</a><a class="header__anchor" href="#testimonials">Testimonials</a></div>
+            </div><a class="header__anchor tablet-flex" href="#about">About Us</a><a class="header__anchor tablet-flex" href="#services">Services</a><a class="header__anchor tablet-flex" href="#testimonials">Testimonials</a><a class="header__anchor" href="#contact">Contact</a>
           </div>
         </nav>
         <div class="header__toggler tablet js-toggler"><span></span></div>
@@ -33,15 +33,33 @@
             <h2 class="banner__heading">Experience beauty beyond boundaries.</h2>
             <p class="banner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies urna ac velit molestie ullamcorper. Sed varius nec purus in ultrices.</p><a class="button" href=""><span>Book an appointment</span></a>
           </div>
-          <div class="splide banner__slider js-slider"> 
+          <div class="splide banner__slider">
             <div class="splide__track">
               <ul class="splide__list">
-                <li class="splide__slide"><img class="cover" src="img/banner/banner-1.jpg" alt=""></li>
-                <li class="splide__slide"><img class="cover" src="img/banner/banner-2.jpg" alt=""></li>
-                <li class="splide__slide"><img class="cover" src="img/banner/banner-3.jpg" alt=""></li>
-                <li class="splide__slide"><img class="cover" src="img/banner/banner-4.jpg" alt=""></li>
-                <li class="splide__slide"><img class="cover" src="img/banner/banner-5.jpg" alt=""></li>
-                <li class="splide__slide"><img class="cover" src="img/banner/banner-6.jpg" alt=""></li>
+                <li class="splide__slide">
+                  <picture>
+                    <source srcset="img/banner/banner-1.webp" type="image/webp">
+                    <source srcset="img/banner/banner-1.jpg" type="image/jpg"><img class="cover" src="img/banner/banner-1.jpg" alt="Serenity Salon facility">
+                  </picture>
+                </li>
+                <li class="splide__slide">
+                  <picture>
+                    <source srcset="img/banner/banner-2.webp" type="image/webp">
+                    <source srcset="img/banner/banner-2.jpg" type="image/jpg"><img class="cover" src="img/banner/banner-2.jpg" alt="Serenity Salon facility">
+                  </picture>
+                </li>
+                <li class="splide__slide">
+                  <picture>
+                    <source srcset="img/banner/banner-3.webp" type="image/webp">
+                    <source srcset="img/banner/banner-3.jpg" type="image/jpg"><img class="cover" src="img/banner/banner-3.jpg" alt="Serenity Salon facility">
+                  </picture>
+                </li>
+                <li class="splide__slide">
+                  <picture>
+                    <source srcset="img/banner/banner-4.webp" type="image/webp">
+                    <source srcset="img/banner/banner-4.jpg" type="image/jpg"><img class="cover" src="img/banner/banner-4.jpg" alt="Serenity Salon facility">
+                  </picture>
+                </li>
               </ul>
             </div>
           </div>
@@ -51,78 +69,102 @@
         <div class="about__content section__content">
           <div class="about__img-container"> <img class="cover" src="img/about/about-1.jpg" alt=""><img class="cover" src="img/about/about-2.jpg" alt=""></div>
           <div class="about__text">
-            <h2 class="heading">Who we are?</h2>
-            <p class="about__text">In consequat, nisl quis dignissim auctor, arcu massa auctor purus, ut lobortis lectus erat et augue. Etiam eget maximus elit. Quisque cursus sagittis metus, nec placerat risus ultrices sit amet.</p><a class="button button--secondary" href=""><span>Find out more</span></a>
+            <h2 class="heading">About Us</h2>
+            <p class="about__text">In consequat, nisl quis dignissim auctor, arcu massa auctor purus, ut lobortis lectus erat et augue. Etiam eget maximus elit. Quisque cursus sagittis metus, nec placerat risus ultrices sit amet. Ut sollicitudin, libero ut convallis sagittis, diam nulla tempus enim, feugiat condimentum nunc sem sit amet ante.</p><a class="button button--secondary" href=""><span>Find out more</span></a>
           </div>
         </div>
       </section>
       <section class="section services" id="services">
         <div class="services__content section__content">
-          <h2 class="heading">Our Services</h2>
-          <div class="services__container" href=""><a class="services__item" href=""><img class="cover" src="img/services/makeup.jpg" alt=""><span class="services__heading">Makeup</span>
-              <p>Phasellus vel neque iaculis, interdum arcu vitae, sollicitudin nisi. Nulla id interdum elit, sit amet ultricies sem.</p>
-              <div class="button button--white services__btn"><span>Learn More</span></div></a><a class="services__item" href=""><img class="cover" src="img/services/hair.jpg" alt=""><span class="services__heading">Hair Services </span>
-              <p>Phasellus vel neque iaculis, interdum arcu vitae, sollicitudin nisi. Nulla id interdum elit, sit amet ultricies sem.</p>
-              <div class="button button--white services__btn"><span>Learn More</span></div></a><a class="services__item" href=""><img class="cover" src="img/services/nail.jpg" alt=""><span class="services__heading">Nail Care</span>
-              <p>Phasellus vel neque iaculis, interdum arcu vitae, sollicitudin nisi. Nulla id interdum elit, sit amet ultricies sem.</p>
-              <div class="button button--white services__btn"><span>Learn More</span></div></a><a class="services__item" href=""><img class="cover" src="img/services/spa.jpg" alt=""><span class="services__heading">Spa Treatments </span>
-              <p>Phasellus vel neque iaculis, interdum arcu vitae, sollicitudin nisi. Nulla id interdum elit, sit amet ultricies sem.        </p>
-              <div class="button button--white services__btn"><span>Learn More</span></div></a></div>
+          <div class="services__text">
+            <h2 class="heading">Services We Offer</h2>
+            <p>Indulge in a world of beauty and relaxation with our exquisite services.</p>
+          </div>
+          <div class="services__container" href="">
+            <div class="services__item"><img class="services__img" src="img/services/makeup.svg" alt="">
+              <div class="services__item-wrap"><span class="services__heading">Makeup </span>
+                <ul class="services__sublist">
+                  <li>Special Occasion Makeup</li>
+                  <li>Professional Headshot Makeup</li>
+                  <li>Special Effects Makeup</li>
+                  <li>Bridal Makeup</li>
+                </ul><a class="button button--small services__btn" href=""><span>Learn More</span></a>
+              </div>
+            </div>
+            <div class="services__item"><img class="services__img" src="img/services/hair.svg" alt="">
+              <div class="services__item-wrap"><span class="services__heading">Hair Services </span>
+                <ul class="services__sublist">
+                  <li>Haircuts</li>
+                  <li>Styling</li>
+                  <li>Coloring</li>
+                  <li>Hair Extensions</li>
+                </ul><a class="button button--small services__btn" href=""><span>Learn More</span></a>
+              </div>
+            </div>
+            <div class="services__item"><img class="services__img" src="img/services/nail.svg" alt="">
+              <div class="services__item-wrap"><span class="services__heading">Nail Care</span>
+                <ul class="services__sublist">
+                  <li>Manicures</li>
+                  <li>Pedicures</li>
+                  <li>Nail Art</li>
+                  <li>Nail Enhancements</li>
+                </ul><a class="button button--small services__btn" href=""><span>Learn More</span></a>
+              </div>
+            </div>
+            <div class="services__item"><img class="services__img" src="img/services/spa.svg" alt="">
+              <div class="services__item-wrap"><span class="services__heading">Spa Treatments </span>
+                <ul class="services__sublist">
+                  <li>Massage</li>
+                  <li>Body Treatments</li>
+                  <li>Facials</li>
+                  <li>Aromatherapy</li>
+                </ul><a class="button button--small services__btn" href=""><span>Learn More</span></a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section testimonials" id="testimonials">
-        <div class="testimonials__content section__content">
+        <div class="testimonials__content">
           <div class="testimonials__text"> 
             <h2 class="heading">Testimonials </h2>
             <p>What our clients say about us</p>
           </div>
-          <div class="testimonials__container"> 
-            <div class="testimonials__item"> 
-              <div class="testimonials__img"><img class="cover" src="img/testimonials/person-1.jpg" alt=""></div>
-              <p class="testimonials__quote">Phasellus vel neque iaculis, interdum arcu vitae, sollicitudin nisi. Nulla id interdum elit, sit amet ultricies sem.</p><span class="testimonials__name">Annie Smith</span><span class="testimonials__work">Beauty Queen</span>
+          <div class="splide testimonial__slider">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="testimonials__item"> 
+                    <div class="testimonials__img"><img class="cover" src="img/testimonials/person-1.jpg" alt=""></div>
+                    <p class="testimonials__quote">Phasellus vel neque iaculis, interdum arcu vitae, sollicitudin nisi. Nulla id interdum elit, sit amet ultricies sem.</p><span class="testimonials__name"> Annie Smith</span><span class="testimonials__work">Beauty Queen</span>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="testimonials__item"> 
+                    <div class="testimonials__img"><img class="cover" src="img/testimonials/person-2.jpg" alt=""></div>
+                    <p class="testimonials__quote">Donec mauris velit, tincidunt vitae nisl in, ultrices consequat diam. In facilisis leo ac eros dapibus, eget euismod odio consectetur.</p><span class="testimonials__name">Katherine Wilson</span><span class="testimonials__work">Influencer</span>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="testimonials__item"> 
+                    <div class="testimonials__img"><img class="cover" src="img/testimonials/person-3.jpg" alt=""></div>
+                    <p class="testimonials__quote">Mauris ut suscipit urna. Etiam ex lacus, aliquet semper varius in, tristique sed turpis. Nullam vitae ligula sit amet quam facilisis commodo.</p><span class="testimonials__name">Sasha Anderson</span><span class="testimonials__work">Actress</span>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="testimonials__item"> 
+                    <div class="testimonials__img"><img class="cover" src="img/testimonials/person-2.jpg" alt=""></div>
+                    <p class="testimonials__quote">Donec mauris velit, tincidunt vitae nisl in, ultrices consequat diam. In facilisis leo ac eros dapibus, eget euismod odio consectetur.</p><span class="testimonials__name">Katherine Wilson</span><span class="testimonials__work">Influencer</span>
+                  </div>
+                </li>
+                <li class="splide__slide"> 
+                  <div class="testimonials__item"> 
+                    <div class="testimonials__img"><img class="cover" src="img/testimonials/person-3.jpg" alt=""></div>
+                    <p class="testimonials__quote">Mauris ut suscipit urna. Etiam ex lacus, aliquet semper varius in, tristique sed turpis. Nullam vitae ligula sit amet quam facilisis commodo.</p><span class="testimonials__name">Sasha Anderson</span><span class="testimonials__work">Actress</span>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="testimonials__item"> 
-              <div class="testimonials__img"><img class="cover" src="img/testimonials/person-2.jpg" alt=""></div>
-              <p class="testimonials__quote">Donec mauris velit, tincidunt vitae nisl in, ultrices consequat diam. In facilisis leo ac eros dapibus, eget euismod odio consectetur.</p><span class="testimonials__name">Katherine Wilson</span><span class="testimonials__work">Influencer</span>
-            </div>
-            <div class="testimonials__item"> 
-              <div class="testimonials__img"><img class="cover" src="img/testimonials/person-3.jpg" alt=""></div>
-              <p class="testimonials__quote">Mauris ut suscipit urna. Etiam ex lacus, aliquet semper varius in, tristique sed turpis. Nullam vitae ligula sit amet quam facilisis commodo.</p><span class="testimonials__name">Sasha Anderson</span><span class="testimonials__work">Actress</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section branches" id="branches">
-        <div class="branches__content section__content">
-          <h2 class="heading">Visit our branches</h2>
-          <div class="branches__table-container">
-            <table class="branches__table">
-              <tr> 
-                <th>Branches </th>
-                <th>Services </th>
-                <th>Available Tables</th>
-              </tr>
-              <tr> 
-                <td>Mall of Asia </td>
-                <td>Makeup, Hair Services, Nailcare, Spa Treatments</td>
-                <td>9</td>
-              </tr>
-              <tr> 
-                <td>Bonifacio Global City</td>
-                <td>Hair Services, Nailcare, Spa Treatments </td>
-                <td>10</td>
-              </tr>
-              <tr> 
-                <td>Makati City</td>
-                <td>Makeup, Hair Services, Nailcare</td>
-                <td>5</td>
-              </tr>
-              <tr> 
-                <td>Cebu City </td>
-                <td>Makeup, Hair Services</td>
-                <td>5</td>
-              </tr>
-            </table>
           </div>
         </div>
       </section>
@@ -132,22 +174,22 @@
             <h2 class="heading contact__heading">Get in touch for a Serene Experience</h2>
             <div class="contact__info-container">
               <div class="contact__info-wrap"><span class="contact__info-title">Address:</span><span class="contact__info">Mall of Asia </span></div>
-              <div class="contact__info-wrap"><span class="contact__info-title">Phone:</span><span class="contact__info">+639234720238</span></div>
+              <div class="contact__info-wrap"><span class="contact__info-title">Phone:</span><span class="contact__info">+639234567890</span></div>
               <div class="contact__info-wrap"><span class="contact__info-title">Email:</span><span class="contact__info">serenitysalon@gmail.com</span></div>
               <div class="contact__info-wrap"><span class="contact__info-title">Hours:</span><span class="contact__info">9:00 am - 5:00 pm</span></div>
               <div class="contact__socials"><a class="contact__social-icon" href=""></a><a class="contact__social-icon" href=""></a><a class="contact__social-icon" href=""></a><a class="contact__social-icon" href=""></a><a class="contact__social-icon" href=""></a></div>
             </div>
           </div>
           <div class="contact__form-container"> 
-            <form class="contact__form" name= "contact" id="contact" action=""> 
+            <form class="contact__form" action=""> 
               <div class="contact__input-wrap"> 
-                <input type="text" name= "contact" id="contact" placeholder="Name" required="">
+                <input type="text" placeholder="Name" required="">
               </div>
               <div class="contact__input-wrap"> 
-                <input type="email" name= "email" id="email" placeholder="Email" required="">
+                <input type="email" placeholder="Email" required="">
               </div>
               <div class="contact__input-wrap"> 
-                <input type="text" name= "text" id="text" placeholder="Subject" required="">
+                <input type="text" placeholder="Subject" required="">
               </div>
               <div class="contact__input-wrap"> 
                 <textarea name="subject" cols="20" rows="8" placeholder="Message"></textarea>
@@ -163,12 +205,12 @@
         <div class="footer__container">
           <div class="footer__wrapper">
             <div class="footer__logo"><img class="contain" src="img/logo.svg" alt=""></div>
-            <div class="footer__info"> <span>Address: Mall of Asia</span><span>Phone: +639234720238</span><span>Email: serenitysalon@gmail.com</span><span>Hours: 9:00 am - 5:00 pm</span></div>
+            <div class="footer__info"> <span>Address: Mall of Asia</span><span>Phone: +639234567890</span><span>Email: serenitysalon@gmail.com</span><span>Hours: 9:00 am - 5:00 pm</span></div>
             <div class="contact__socials"><a class="contact__social-icon" href=""></a><a class="contact__social-icon" href=""></a><a class="contact__social-icon" href=""></a><a class="contact__social-icon" href=""></a><a class="contact__social-icon" href=""></a></div>
           </div>
-          <div class="footer__link-wrapper"> <a href="#">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#testimonials">Testimonials</a><a href="#branches">Branches</a><a href="#contact">Contact</a></div>
+          <div class="footer__link-wrapper"> <a href="#">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a></div>
         </div>
-        <div class="footer__copyright"><span>2023 © Giselle Santos. All rights reserved.</span></div>
+        <div class="footer__copyright"><span>2023 © Giselle Santos. All rights reserved.</span></div><a class="footer__to-top-btn js-to-top" href="#"></a>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
